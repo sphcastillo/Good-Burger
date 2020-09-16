@@ -1,0 +1,10 @@
+INSERT INTO burgers (name) VALUES ("Simple Stack");
+INSERT INTO burgers (name) VALUES ("Double Stack");
+INSERT INTO burgers (name) VALUES ("BBQ Bacon Cheeseburger");
+INSERT INTO burgers (name) VALUES ("Stack 'N' Blue");
+INSERT INTO burgers (name) VALUES ("Wake Up Call");
+INSERT INTO burgers (name) VALUES ("Pepper Jack Stack");
+INSERT INTO burgers (name) VALUES ("Hawaiian Burger");
+INSERT INTO burgers (name) VALUES ("Mac N' Cheese Burger");
+INSERT INTO burgers (name) VALUES ("Jalapeño Chipotle Burger");
+INSERT INTO burgers (name) VALUES ("Vegetarian Burger");
