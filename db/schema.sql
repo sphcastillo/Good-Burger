@@ -10,4 +10,5 @@ CREATE TABLE burgers(
     burger_name VARCHAR(30) NOT NULL,
     devoured BOOLEAN DEFAULT true,
     PRIMARY KEY (id)
-)
+);
+
