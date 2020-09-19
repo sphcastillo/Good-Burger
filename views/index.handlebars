@@ -1,0 +1,78 @@
+
+<ul>
+  {{#each cats}}
+    {{#unless sleepy}}
+      {{> cats/cat-block sleep=true}}
+    {{/unless}}
+  {{/each}}
+</ul> 
+
+
+<ul>
+  {{#each cats}}
+    {{#if sleepy}}
+      {{> cats/cat-block sleep=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+
+{{!-- <h2>Eat That Burger!</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">Burger Name:</label>
+    <input type="text" id="burger" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="sleepy">Devoured</label><br>
+    <input type="radio" name="true" value="1" checked>Absolutely!<br>
+    <input type="radio" name="false" value="0">Give Me A Sec! 
+  </div>
+
+  <button type="submit">Add Burger</button>
+</form> --}}
+
+    <header></header>
+    <main>
+        <div id="needsToBeEaten" class="column">
+            <div id="eatThemBurgers">
+                <ul class="hamburgerGroups">
+                    {{#each burgers}}
+                    {{#unless devoured}}
+                    <li id="hamburgers" class="list-group-item">
+                        <div>{{burger_name}}</div>
+                        <button id="devourMeButton" data-burger={{id}}>Eat Me!</button>
+                    </li>
+                    {{/unless}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+        <div id="welcomeCommittee" class="column">
+            <h1>Good Burger</h1>
+            <h3>Welcome to Good Burger!</h3>
+            <h3>Home of the Good Burger!</h3>
+            <h3>Can I take your order?</h3>
+        </div>
+        <div id="devoured" class="column">
+            <div id="eatThemBurgers">
+                <ul class="hamburgerGroups">
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    <li id="hamburgers" class="list-group-item">
+                        <div>{{burger_name}}</div>
+                    </li>
+                    {{/if}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </main>    
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Enter burger name here:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="button" id="formButton" class="btn btn-primary">Submit</button>
+    </form>

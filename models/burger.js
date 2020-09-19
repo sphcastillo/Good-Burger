@@ -18,7 +18,7 @@ const burger = {
       cb(res);
     });
   },
-//   allDevoured: function(condition, cb) {
+//   delete/allDevoured: function(condition, cb) {
 //     orm.allDevoured("burgers", condition, function(res) {
 //       cb(res);
 //     });
@@ -27,3 +27,4 @@ const burger = {
 
 // Export the database functions for the controller (catsController.js).
 module.exports = burger;
+
