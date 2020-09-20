@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-image: url("./public/assets/img/12812.jpg" );
+    background-image: url("/assets/img/12812.jpg" );
     background-repeat: repeat-x;
     background-position: center center;
     height: 265px;
@@ -34,7 +34,7 @@ header {
     font-size: 18px;
 }
 
-#devourMeButton {
+.devourMeButton {
     background-color: gold;
     border-color: goldenrod;
     color: white;
