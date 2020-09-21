@@ -40,6 +40,11 @@ header {
     color: white;
 }
 
+.deleteMeButton {
+    background-color: gold;
+    border-color: goldenrod;
+    color: white;
+}
 #welcomeCommittee {
     text-align: center;
     margin-bottom: 10%;

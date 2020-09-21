@@ -28,12 +28,27 @@ $(document).ready(function() {
         data: newBurger
       }).then(
         function() {
-          console.log("created new burger");
+          
 
           location.reload();
         }
       );
     });
-  
+
+    $(".deleteMeButton").on("click", function(){
+      var id = $(this).data("burger");
+
+      $.ajax("/api/burgers/" + id, {
+        type: "DELETE"
+
+      }).then(
+        function(){
+          
+
+          location.reload();
+        }
+      )
+    })
+
 
 });

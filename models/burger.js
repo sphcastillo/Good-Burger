@@ -18,12 +18,14 @@ const burger = {
       cb(res);
     });
   },
-//   delete/allDevoured: function(condition, cb) {
-//     orm.allDevoured("burgers", condition, function(res) {
-//       cb(res);
-//     });
-//   }
+
+  delete: function(condition, cb) {
+    orm.allDevoured("burgers", condition, function(res) {
+      cb(res);
+    });
+  }
 };
+
 
 // Export the database functions for the controller (catsController.js).
 module.exports = burger;

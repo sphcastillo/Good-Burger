@@ -4,6 +4,10 @@ CREATE DATABASE burgers_db;
 
 USE  burgers_db;
 
+-- FOR DEPLOYMENT
+
+USE y86hxjl3wutfs5ux;
+
 
 CREATE TABLE burgers(
     id int AUTO_INCREMENT NOT NULL,

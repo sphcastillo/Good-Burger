@@ -81,6 +81,19 @@ const orm = {
   
         cb(result);
       });
+    },
+
+    allDevoured: function(table, condition, cb) {
+      // "DELETE FROM burgers WHERE id = id"
+      let queryString = "DELETE FROM " + table; 
+      queryString += " WHERE " + condition;
+
+      console.log(queryString);
+
+      connection.query(queryString, (err, result) => {
+        if(err) throw err;
+        cb(result);
+      })
     }
   };
 
