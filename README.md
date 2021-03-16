@@ -18,7 +18,7 @@ Author : Sophia Castillo,
 
 Email : Sphcastillo@gmail.com,
 
-GitHub: hhttps://github.com/sphcastillo/Good-Burger
+GitHub: hhttps://github.com/sphcastillo
 
 
 
